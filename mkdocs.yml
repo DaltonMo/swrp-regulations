@@ -1,0 +1,74 @@
+site_name: [SERVER NAME] Regulations
+site_description: Grand Army of the Republic military roleplay — official regulations
+site_url: https://YOURNAME.github.io/REPO-NAME/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+plugins:
+  - search
+
+nav:
+  - Start here:
+      - Trooper card: index.md
+  - Role guides:
+      - New trooper: guides/new-trooper.md
+      - NCO and instructor: guides/nco-instructor.md
+      - Officer: guides/officer.md
+      - Staff: guides/staff.md
+  - Regulations:
+      - Server charter: regs/charter.md
+      - Canon scope: regs/canon-scope.md
+      - Standard operating procedures: regs/sop.md
+      - Staff handbook: regs/staff-handbook.md
+      - Command handbook: regs/command-handbook.md
+      - Qualification syllabi: regs/qualifications.md
+  - Programs:
+      - Onboarding script: programs/onboarding-script.md
+      - Sponsor program: programs/sponsor-program.md
+      - Event planner playbook: programs/event-playbook.md
+      - Campaign map rules: programs/campaign-map.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/YOURINVITE
+
+copyright: >
+  Unofficial non-commercial Star Wars fan community.
+  Not affiliated with or endorsed by Lucasfilm Ltd. or The Walt Disney Company.
