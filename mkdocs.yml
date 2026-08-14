@@ -1,6 +1,6 @@
-site_name: SERVER NAME Regulations
+site_name: Clone Wars Regulations
 site_description: Grand Army of the Republic military roleplay — official regulations
-site_url: https://YOURNAME.github.io/REPO-NAME/
+site_url: https://daltonmo.github.io/swrp-regulations/
 
 theme:
   name: material
