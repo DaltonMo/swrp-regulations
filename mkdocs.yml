@@ -1,44 +1,74 @@
-site_name: Clone Wars Regulations
+site_name: SERVER NAME Regulations
 site_description: Grand Army of the Republic military roleplay — official regulations
 site_url: https://daltonmo.github.io/swrp-regulations/
 
+repo_url: https://github.com/DaltonMo/swrp-regulations
+repo_name: swrp-regulations
+edit_uri: edit/main/docs/
+
 theme:
   name: material
+  font:
+    text: Barlow
+    code: JetBrains Mono
+  icon:
+    logo: material/shield-outline
+    repo: fontawesome/brands/github
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: blue grey
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
-      accent: indigo
+      primary: black
+      accent: amber
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.indexes
+    - navigation.tracking
     - navigation.top
     - navigation.instant
+    - navigation.instant.progress
+    - navigation.footer
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.action.edit
     - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
   - tables
+  - footnotes
+  - def_list
   - toc:
       permalink: true
+      permalink_title: Link to this section
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search
@@ -68,6 +98,11 @@ extra:
   social:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/YOURINVITE
+      name: Join the Discord
+    - icon: fontawesome/brands/steam
+      link: https://steamcommunity.com/groups/YOURGROUP
+      name: Steam group
+  generator: false
 
 copyright: >
   Unofficial non-commercial Star Wars fan community.
